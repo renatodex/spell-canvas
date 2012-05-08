@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Spell Canvas : A framework built on top of cool libraries which allows you to have a Canvas Application all ready to play." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Spell Canvas</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/renatodex/spell-canvas">View on GitHub</a>
+
+          <h1 id="project_title">Spell Canvas</h1>
+          <h2 id="project_tagline">A framework built on top of cool libraries which allows you to have a Canvas Application all ready to play.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/renatodex/spell-canvas/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/renatodex/spell-canvas/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Introduction</h3>
+
+<p>Everyone talk about Canvas. Canvas this, Canvas that, the new Flash, etc, etc, etc.
+But...it is really easy to use? Not really, yet.
+Build Canvas apps today is a CRAP. Theres a whole work you have to do before your project is ready to start.
+I built this framework to easy your life. Correction: To easy my life. But im sure it can works for you too.</p>
+
+<h3>How to start?</h3>
+
+<p>Its so easy to start using Spell-Canvas, all you need to do is clone the repository and setup your page to load it.</p>
+
+<pre><code>$ git clone git@github.com:renatodex/spell-canvas.git
+</code></pre>
+
+<h3>But how it works?</h3>
+
+<p>Spell is based on Stages (or Pages), like Scenes on Adobe Flash. All you need to do is create a new page based on the Project structure and start to work.</p>
+
+<p>If you had a site made in canvas, you would create a Stage for each link you have. (Home, Services, Contact, etc)</p>
+
+<p>The structure of a page is as follow:</p>
+
+<pre><code>define(['pages', 'draw'], function(Page, Draw) {
+    return Page.extend({      
+        init : function() {
+            console.log('My page!');
+        },
+    });
+});
+</code></pre>
+
+<p>Everytime you change the page, the Canvas is re-drawed.</p>
+
+<h3>I should use it?</h3>
+
+<p>I do not recommend Spell for production environment yet, because its still at development stage.
+But feel free to study the source code and see if you can contribute.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>At least only me (<a href="https://github.com/renatodex" class="user-mention">@renatodex</a>). If you want to contribute, talk to me!</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with something? Dont worry, this is not a documentation, and my support not the best for now, but im just implementing new things like Events, Animation, so, keep an eye open!</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Spell Canvas maintained by <a href="https://github.com/renatodex">renatodex</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
