@@ -1,4 +1,4 @@
-### Spell Canvas. Wrap your app.
+## Spell Canvas. Wrap your app.
 Everyone talk about Canvas. Canvas this, Canvas that, the new Flash, etc, etc, etc.
 But...it is really easy to use? Not really, yet.
 Build Canvas apps today is a CRAP. Theres a whole work you have to do before your project is ready to start.
