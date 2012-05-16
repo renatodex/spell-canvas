@@ -14,6 +14,11 @@ define(['lib/collections/Collection'], function(Collection) {
        getMain : function() {
            var storage = this.getStorage();
            return storage[0];
+       },
+       
+       getGhost : function() {
+           var storage = this.getStorage();
+           return storage[1];
        }
    });
    

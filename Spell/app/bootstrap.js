@@ -288,6 +288,7 @@ define([
 //        return $(['#',tagId].join(''));
 //    }
         
-    SpellStorage.Animation.disable();
+//    SpellStorage.Animation.disable();
+    SpellStorage.Animation.enable();
     bootstrap();
 });

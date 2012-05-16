@@ -3,8 +3,8 @@ define(['lib/models/Model'], function(Model) {
         init : function(name, properties) {
             this.context = properties.context || SpellStorage.Contexts.getMain().getContext();
             this.name = name || 'default';
-            this.x = properties.x || 0;
-            this.y = properties.y || 0;
+            this.pos_x = properties.x || 0;
+            this.pos_y = properties.y || 0;
             this.width = properties.width || 50;
             this.height = properties.height || 50;
             
@@ -13,12 +13,36 @@ define(['lib/models/Model'], function(Model) {
         getName : function() {
             return this.name;
         },
+        
+        
         getX : function() {
-            return this.x;
+            return this.pos_x;
         },
+        setX : function(val) {
+            this.pos_x = val;
+        },
+        addX : function(val) {
+            this.setX(this.pos_x + val);
+            this.render();
+        },
+        toX : function(val) {
+            this.setX(val);
+            this.render();
+        },
+        
+        
         getY : function() {
-            return this.y;
+            return this.pos_y;
+        },        
+        setY : function(val) {
+            this.pos_y = val;
         },
+        addY : function(val) {
+            this.setY(this.pos_x + val);
+            this.render();
+        },
+        
+        
         getWidth : function() {
             return this.width;
         },
