@@ -11,7 +11,7 @@ define(function(){var s={
  */
 
     Setup : {
-        frameRate : 50
+        frameRate : 30
     },
 
     Pages : {

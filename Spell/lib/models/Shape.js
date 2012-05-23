@@ -38,7 +38,7 @@ define(['lib/models/Model'], function(Model) {
             this.pos_y = val;
         },
         addY : function(val) {
-            this.setY(this.pos_x + val);
+            this.setY(this.pos_y + val);
             this.render();
         },
         
