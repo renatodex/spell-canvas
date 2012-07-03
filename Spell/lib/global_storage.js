@@ -5,7 +5,8 @@ define([
     'lib/models/DrawCount',
     'lib/collections/Objects',
     'lib/collections/Contexts',
-    'lib/settings'
+    'lib/settings',
+    'lib/collections/ApplicationStorage'
 ], function(
     StageHistoryCollection, 
     ClickHistoryCollection, 
@@ -13,7 +14,8 @@ define([
     DrawCount,
     ObjectsCollection,
     ContextsCollection,
-    AppSettings
+    AppSettings,
+    ApplicationStorage
 ) {
     SpellStorage = {
         StageHistory : new StageHistoryCollection(),
@@ -22,7 +24,8 @@ define([
         DrawCount : new DrawCount(),
         Objects : new ObjectsCollection(),
         Settings : AppSettings,
-        Contexts : new ContextsCollection()
+        Contexts : new ContextsCollection(),
+        Application : new ApplicationStorage()
     }
     
     return SpellStorage;

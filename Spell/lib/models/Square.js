@@ -3,6 +3,7 @@ define(['lib/models/Shape'], function(Shape) {
         init : function(name, properties) {
             this._super(name, properties);
             this.background = properties.background;
+            this.stroke = properties.stroke;
         },
         render : function(x, y, width ,height) {
             var render_x = x || this.pos_x;
@@ -12,16 +13,21 @@ define(['lib/models/Shape'], function(Shape) {
             
             this._super();
             var ctx = this.getContext();
-            var fillColor;
+            var fillColor = '#000000';
+            var strokeStyle = '';
           
-            if(typeof(this.background) == 'undefined') {
-                fillColor = '#000000';
-            } else {
+            if(typeof(this.background) != 'undefined') {
                 fillColor = this.background;
             }
+            
+            if(typeof(this.stroke) != 'undefined') {
+                strokeStyle = this.stroke;
+            }
           
+            ctx.strokeStyle = strokeStyle;
             ctx.fillStyle = fillColor;
             ctx.fillRect(render_x, render_y, render_width, render_height);
+            ctx.strokeRect(render_x, render_y, render_width, render_height);
         },
         
 //        addX : function(pos_x) {

@@ -1,10 +1,13 @@
-define(['lib/modules/Spell/spell'], function(SpellMethods) {
+define(['lib/modules/Spell/spell', 'lib/util'], function(SpellMethods, Util) {
    var Model = Class.extend({
        init : function() {
-           
+           this._uid = Util.generateUid();
        },
        getSpell : function() {
            return new SpellMethods();
+       },
+       getUid : function() {
+           return this._uid;
        }
    });
    

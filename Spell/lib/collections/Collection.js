@@ -14,6 +14,17 @@ define([], function() {
         },
         count : function() {
             return this.storage.length;
+        },
+        getByUid : function(uid) {
+            var storage = this.getStorage();
+           
+            for(var i in storage) {
+                if(storage[i].getUid() == uid) {
+                    return storage[i]
+                }
+            }
+           
+            return null;
         }
     });
    

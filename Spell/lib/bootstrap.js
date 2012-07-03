@@ -1,6 +1,6 @@
 define([
     'lib/modules/Spell/spell', 
-    'lib/storage',
+    'lib/global_storage',
     'lib/pages',
     'lib/event',
     'lib/models/Context'
